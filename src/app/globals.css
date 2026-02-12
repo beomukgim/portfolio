@@ -2,26 +2,99 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+/* ─── Pretendard Font Face ─── */
+@font-face {
+  font-family: "Pretendard";
+  src: url("/fonts/Pretendard-Regular.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+  font-display: block;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+@font-face {
+  font-family: "Pretendard";
+  src: url("/fonts/Pretendard-Medium.woff2") format("woff2");
+  font-weight: 500;
+  font-style: normal;
+  font-display: block;
+}
+
+@font-face {
+  font-family: "Pretendard";
+  src: url("/fonts/Pretendard-SemiBold.woff2") format("woff2");
+  font-weight: 600;
+  font-style: normal;
+  font-display: block;
+}
+
+@font-face {
+  font-family: "Pretendard";
+  src: url("/fonts/Pretendard-Bold.woff2") format("woff2");
+  font-weight: 700;
+  font-style: normal;
+  font-display: block;
+}
+
+@font-face {
+  font-family: "Pretendard";
+  src: url("/fonts/Pretendard-ExtraBold.woff2") format("woff2");
+  font-weight: 800;
+  font-style: normal;
+  font-display: block;
+}
+
+/* ─── A4 Page Container ─── */
+.a4-page {
+  width: 794px;
+  height: 1123px;
+  position: relative;
+  overflow: hidden;
+  box-sizing: border-box;
+  break-after: page;
+  break-inside: avoid;
+}
+
+.a4-page:last-child {
+  break-after: auto;
+}
+
+/* ─── Print Styles ─── */
+@media print {
+  @page {
+    size: 210mm 297mm;
+    margin: 0;
+  }
+
+  html,
+  body {
+    width: 210mm;
+    height: auto;
+    margin: 0;
+    padding: 0;
+  }
+
+  .a4-page {
+    page-break-after: always;
+    page-break-inside: avoid;
+  }
+
+  .a4-page:last-child {
+    page-break-after: auto;
+  }
+
+  .portfolio-container {
+    gap: 0 !important;
+    padding: 0 !important;
+    background: transparent !important;
+  }
+
+  .no-print {
+    display: none !important;
   }
 }
 
-body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
-}
-
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
-  }
+/* ─── Print Background Color Support ─── */
+* {
+  -webkit-print-color-adjust: exact;
+  print-color-adjust: exact;
 }
