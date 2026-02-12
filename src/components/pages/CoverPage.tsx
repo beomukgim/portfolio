@@ -93,6 +93,11 @@ export default function CoverPage({ data }: CoverPageProps) {
           <p className="text-a4-xs text-navy-300 mt-1">{data.date}</p>
         </div>
 
+        {/* Made with Claude Code */}
+        <p className="text-[9px] text-navy-400 text-center mb-2">
+          이 PDF는 Claude Code를 활용하여 Next.js + Tailwind CSS + TypeScript로 만들었습니다.
+        </p>
+
         {/* Decorative bottom accent */}
         <div className="absolute bottom-0 left-0 right-0 h-1.5 bg-accent" />
       </div>
