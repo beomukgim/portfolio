@@ -24,8 +24,15 @@ export default function CoverPage({ data }: CoverPageProps) {
         {/* Decorative top accent */}
         <div className="absolute top-0 left-0 right-0 h-1.5 bg-accent" />
 
+        {/* Made with Claude Code */}
+        <div className="flex items-center justify-center gap-2 mt-6 px-4 py-2 rounded-md bg-white/5 border border-white/10">
+          <span className="text-a4-xs font-bold text-accent-light tracking-wide">
+            이 포트폴리오는 Claude Code를 활용하여 Next.js · Tailwind CSS · TypeScript로 제작했습니다.
+          </span>
+        </div>
+
         {/* Top spacer */}
-        <div className="pt-[140px]" />
+        <div className="pt-[90px]" />
 
         {/* Main title block */}
         <div>
@@ -92,11 +99,6 @@ export default function CoverPage({ data }: CoverPageProps) {
           </p>
           <p className="text-a4-xs text-navy-300 mt-1">{data.date}</p>
         </div>
-
-        {/* Made with Claude Code */}
-        <p className="text-[9px] text-navy-400 text-center mb-2">
-          이 PDF는 Claude Code를 활용하여 Next.js + Tailwind CSS + TypeScript로 만들었습니다.
-        </p>
 
         {/* Decorative bottom accent */}
         <div className="absolute bottom-0 left-0 right-0 h-1.5 bg-accent" />
