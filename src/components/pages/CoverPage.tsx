@@ -20,7 +20,7 @@ export default function CoverPage({ data }: CoverPageProps) {
 
   return (
     <section className="a4-page bg-navy">
-      <div className="relative h-full flex flex-col text-white px-[76px]">
+      <div className="relative h-full flex flex-col text-white px-5 md:px-[76px]">
         {/* Decorative top accent */}
         <div className="absolute top-0 left-0 right-0 h-1.5 bg-accent" />
 
@@ -32,11 +32,11 @@ export default function CoverPage({ data }: CoverPageProps) {
         </div>
 
         {/* Top spacer */}
-        <div className="pt-[90px]" />
+        <div className="pt-10 md:pt-[90px]" />
 
         {/* Main title block */}
         <div>
-          <h1 className="text-[52px] leading-[60px] font-extrabold tracking-tight">
+          <h1 className="text-3xl md:text-[52px] leading-tight md:leading-[60px] font-extrabold tracking-tight">
             {data.title}
           </h1>
           <div className="w-20 h-[3px] bg-accent mt-5 mb-6" />

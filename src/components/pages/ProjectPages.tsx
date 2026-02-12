@@ -333,7 +333,7 @@ export default function ProjectPages({ projects, startPage }: ProjectPagesProps)
                       <p className="text-a4-sm text-navy-400 mb-3 pl-4">
                         {project.architecture.description}
                       </p>
-                      <div className="grid grid-cols-2 gap-3 pl-4">
+                      <div className="grid grid-cols-1 md:grid-cols-2 gap-3 pl-4">
                         {project.architecture.components.map((comp, j) => (
                           <div
                             key={j}

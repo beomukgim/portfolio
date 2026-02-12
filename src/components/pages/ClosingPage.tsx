@@ -135,13 +135,13 @@ export default function ClosingPage({ author, pageNumber }: ClosingPageProps) {
           <span className="w-1.5 h-1.5 rounded-full bg-accent" />
           기술 스택 숙련도
         </h4>
-        <div className="grid grid-cols-2 gap-x-6 gap-y-3 pl-4">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-x-6 gap-y-3 pl-4">
           {techStack.slice(0, 4).map((cat) => (
             <SkillCategory key={cat.name} name={cat.name} skills={cat.skills} />
           ))}
         </div>
         {/* AI Tools - full width */}
-        <div className="pl-4 mt-3 max-w-[48%]">
+        <div className="pl-4 mt-3 max-w-full md:max-w-[48%]">
           <SkillCategory
             name={techStack[4].name}
             skills={techStack[4].skills}
@@ -186,7 +186,7 @@ export default function ClosingPage({ author, pageNumber }: ClosingPageProps) {
           <br />
           함께 만들어 가겠습니다.&rdquo;
         </p>
-        <div className="border-t border-navy-400 pt-3 mt-3 flex justify-center gap-6 text-a4-xs text-navy-200">
+        <div className="border-t border-navy-400 pt-3 mt-3 flex flex-wrap justify-center gap-x-4 gap-y-1 md:gap-6 text-a4-xs text-navy-200">
           <span>{author.email}</span>
           <span>{author.phone}</span>
           {author.github && <span>{author.github}</span>}

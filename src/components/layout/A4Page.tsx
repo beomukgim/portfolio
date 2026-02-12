@@ -26,7 +26,7 @@ export default function A4Page({
       className={`a4-page ${bgClass} ${className}`}
     >
       <div
-        className={`relative h-full ${noPadding ? "" : "px-[76px] pt-[60px] pb-[72px]"}`}
+        className={`relative h-full ${noPadding ? "" : "px-5 md:px-[76px] pt-8 md:pt-[60px] pb-10 md:pb-[72px]"}`}
       >
         {children}
       </div>

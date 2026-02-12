@@ -144,7 +144,7 @@ export function CoilmasterAnalysisPage1({
           대만 Coilmaster Electronics(1995년 설립)가 검색 결과를 지배하여 글로벌
           고객이 두 회사를 혼동할 위험이 매우 높습니다.
         </p>
-        <div className="grid grid-cols-2 gap-2 pl-4">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-2 pl-4">
           <div>
             <p className="text-[9px] font-bold text-red-600 mb-1 tracking-wider">
               BEFORE — 현재 검색 결과
@@ -197,7 +197,7 @@ export function CoilmasterAnalysisPage1({
           <Badge level="good" />
           <h4 className="text-a4-sm font-bold text-navy">잘 된 부분</h4>
         </div>
-        <div className="grid grid-cols-2 gap-x-4 gap-y-0.5 pl-4">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-x-4 gap-y-0.5 pl-4">
           <Issue text="모바일 반응형: 카드형 레이아웃 대응" />
           <Issue text="다국어(영어/한국어) 기본 지원" />
           <Issue text="제품 카테고리 구조 체계적" />
@@ -354,7 +354,7 @@ export function CoilmasterAnalysisPage2({
         </div>
 
         {/* AEO Proposals */}
-        <div className="grid grid-cols-2 gap-x-4 gap-y-2 pl-4 mb-3">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-x-4 gap-y-2 pl-4 mb-3">
           <AeoCard
             num={1}
             title="Schema Markup (구조화 데이터)"

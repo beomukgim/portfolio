@@ -61,7 +61,7 @@ export default function TocIntroPage({ data }: TocIntroPageProps) {
         </div>
 
         {/* Highlights */}
-        <div className="grid grid-cols-4 gap-4">
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
           {data.highlights.map((h, i) => (
             <div
               key={i}

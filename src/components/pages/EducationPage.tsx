@@ -52,7 +52,7 @@ export default function EducationPage({ data, pageNumber = 13 }: EducationPagePr
           <span className="w-2 h-2 rounded-full bg-accent" />
           자격증
         </h3>
-        <div className="ml-4 grid grid-cols-2 gap-3">
+        <div className="ml-4 grid grid-cols-1 md:grid-cols-2 gap-3">
           {data.certifications.map((cert, i) => (
             <div
               key={i}
