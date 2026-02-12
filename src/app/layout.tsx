@@ -2,8 +2,8 @@ import type { Metadata } from "next";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "포트폴리오 - 홍길동",
-  description: "제조 혁신을 위한 기술 역량 소개서",
+  title: "포트폴리오 - 김범욱",
+  description: "풀스택 개발자 김범욱 포트폴리오",
 };
 
 export default function RootLayout({

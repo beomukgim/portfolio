@@ -102,6 +102,7 @@ export interface Project {
   }[];
   technologies: string[];
   lessonsLearned?: string[];
+  connectionPoint?: string;
 }
 
 export interface Education {

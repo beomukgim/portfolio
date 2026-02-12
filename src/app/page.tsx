@@ -1,8 +1,12 @@
 import CoverPage from "@/components/pages/CoverPage";
 import TocIntroPage from "@/components/pages/TocIntroPage";
 import CareerPage from "@/components/pages/CareerPage";
-import SkillsPage from "@/components/pages/SkillsPage";
+import AiToolsPage from "@/components/pages/AiToolsPage";
 import ProjectPages from "@/components/pages/ProjectPages";
+import {
+  CoilmasterAnalysisPage1,
+  CoilmasterAnalysisPage2,
+} from "@/components/pages/CoilmasterAnalysisPages";
 import EducationPage from "@/components/pages/EducationPage";
 import ClosingPage from "@/components/pages/ClosingPage";
 import portfolioData from "@/data/portfolio.json";
@@ -16,10 +20,12 @@ export default function PortfolioPage() {
       <CoverPage data={data.cover} />
       <TocIntroPage data={data.introduction} />
       <CareerPage data={data.career} />
-      <SkillsPage data={data.skills} />
+      <AiToolsPage pageNumber={4} />
       <ProjectPages projects={data.projects} startPage={5} />
-      <EducationPage data={data.education} />
-      <ClosingPage closing={data.closing} author={data.cover.author} />
+      <CoilmasterAnalysisPage1 pageNumber={11} />
+      <CoilmasterAnalysisPage2 pageNumber={12} />
+      <EducationPage data={data.education} pageNumber={13} />
+      <ClosingPage author={data.cover.author} pageNumber={14} />
     </main>
   );
 }

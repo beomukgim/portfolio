@@ -4,11 +4,12 @@ import { Education } from "@/data/schema";
 
 interface EducationPageProps {
   data: Education;
+  pageNumber?: number;
 }
 
-export default function EducationPage({ data }: EducationPageProps) {
+export default function EducationPage({ data, pageNumber = 13 }: EducationPageProps) {
   return (
-    <A4Page pageNumber={11}>
+    <A4Page pageNumber={pageNumber}>
       <SectionTitle title="EDUCATION" subtitle="교육 및 자격" />
 
       {/* Degrees */}
@@ -30,6 +31,9 @@ export default function EducationPage({ data }: EducationPageProps) {
                 <p className="text-a4-sm text-navy-400">
                   {deg.degree} · {deg.major}
                 </p>
+                {deg.gpa && (
+                  <p className="text-a4-xs text-navy-300 mt-0.5">학점: {deg.gpa}</p>
+                )}
                 {deg.note && (
                   <p className="text-a4-xs text-accent mt-0.5">{deg.note}</p>
                 )}

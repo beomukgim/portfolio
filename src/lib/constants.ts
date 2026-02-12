@@ -27,4 +27,4 @@ export const COLORS = {
   BORDER: "#E2E8F0",
 } as const;
 
-export const TOTAL_PAGES = 12;
+export const TOTAL_PAGES = 14;

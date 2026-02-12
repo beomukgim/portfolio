@@ -8,12 +8,13 @@ interface TocIntroPageProps {
 const tocItems = [
   { page: 2, label: "목차 및 자기소개" },
   { page: 3, label: "경력 사항" },
-  { page: 4, label: "핵심 역량" },
-  { page: 5, label: "프로젝트 1 — 스마트 MES 3.0" },
-  { page: 7, label: "프로젝트 2 — IoT 설비 모니터링" },
-  { page: 9, label: "프로젝트 3 — ERP-MES 통합" },
-  { page: 11, label: "교육 및 자격" },
-  { page: 12, label: "마무리" },
+  { page: 4, label: "AI 도구 활용 사례" },
+  { page: 5, label: "프로젝트 1 — 숙박업 중복예약 방지 시스템" },
+  { page: 7, label: "프로젝트 2 — 요가파이어 (온라인 강의 플랫폼)" },
+  { page: 9, label: "프로젝트 3 — Who Am I, Jesus? (성격유형 테스트)" },
+  { page: 11, label: "코일마스터 홈페이지 분석 (SEO · AEO)" },
+  { page: 13, label: "교육 및 자격" },
+  { page: 14, label: "기술 스택 & 성장 방향" },
 ];
 
 export default function TocIntroPage({ data }: TocIntroPageProps) {
